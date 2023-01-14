@@ -154,13 +154,113 @@ nav ul {
 /* -----quick-list styles end */
 
 
+/* -----feature styles start */
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-container {
+    display: flex;
+    gap: 145px;
+    padding-top: 130px;
+}
+
+.feature-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-title {
+    width: 516px;
+}
+
+.feature-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 10px;
+    border-left: 3px solid #FF900E;
+}
+
+.feature-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.feature-list {
+    width: 514px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 42px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+}
+
+.feature-list-title {
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.list-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.feature-img {
+    width: 800px;
+    height: 1059px;
+    text-align: center;
+}
+
+.list-row-margin {
+    margin-top: 20px;
+}
+
+.btn-feature {
+    width: 342px;
+    height: 200px;
+    font-weight: 500;
+    font-size: 25px;
+    background: #FF900E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 45px 42px;
+    border: 0;
+    position: absolute;
+    right: 750px;
+    margin-top: 865px;
+}
+
+.btn-text {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 65px;
+}
+
+
+/* -----feature styles end */
+
+
 /*-----------------------------------------media query styles--------------------------------- */
 
 
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-    /* nav */
+    /* nav -------------------------------------------------------------------------------------*/
     nav {
         align-items: flex-start;
         flex-direction: column;
@@ -172,7 +272,7 @@ nav ul {
         flex-direction: column;
         padding-top: 20px;
     }
-    /* banner */
+    /* banner -------------------------------------------------------------------------------------*/
     .banner-description {
         padding: 32px 12px;
     }
@@ -180,7 +280,7 @@ nav ul {
         width: 100%;
         height: 400px;
     }
-    /* quick list */
+    /* quick list -------------------------------------------------------------------------------------*/
     .quick-list-container {
         flex-direction: column;
     }
@@ -191,23 +291,85 @@ nav ul {
     .quick-list-info {
         padding: 0 20px;
     }
+    /* feature -------------------------------------------------------------------------------------*/
+    .feature-container {
+        padding-top: 100px;
+        gap: 100px;
+    }
+    .feature-container {
+        flex-direction: column;
+    }
+    .head-title {
+        width: 90%;
+        margin-left: 7px;
+    }
+    .feature-list {
+        width: 92%;
+    }
+    .feature-img {
+        width: 100%;
+        height: auto;
+    }
+    .feature-img img {
+        width: 100%;
+    }
+    .btn-feature {
+        height: 150px;
+        font-size: 25px;
+        border-radius: 8px;
+        padding: 25px 32px;
+        position: relative;
+        left: 0;
+        margin: 20px 0;
+    }
 }
 
 
 /* medium devices */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    /* nav */
+    /* nav -------------------------------------------------------------------------------------*/
     nav ul {
         display: flex;
         gap: 30px;
     }
-    /* banner */
+    /* banner -------------------------------------------------------------------------------------*/
     .banner-img img {
         width: 100%;
     }
-    /* quick list */
+    /* quick list -------------------------------------------------------------------------------------*/
     .quick-list-container {
         flex-wrap: wrap;
+    }
+    /* feature -------------------------------------------------------------------------------------*/
+    .feature-container {
+        padding-top: 100px;
+        gap: 100px;
+    }
+    .feature-container {
+        flex-direction: column;
+    }
+    .head-title {
+        width: 90%;
+        margin-left: 7px;
+    }
+    .feature-list {
+        width: 92%;
+    }
+    .feature-img {
+        width: 100%;
+        height: auto;
+    }
+    .feature-img img {
+        width: 100%;
+    }
+    .btn-feature {
+        height: 150px;
+        font-size: 25px;
+        border-radius: 8px;
+        padding: 25px 32px;
+        position: relative;
+        left: 0;
+        margin: 20px 0;
     }
 }
