@@ -327,6 +327,43 @@ nav ul {
 /* -----facts styles end */
 
 
+/* -----sponsor styles start */
+
+.sponsor-header {
+    text-align: center;
+    padding-top: 180px;
+}
+
+.sponsor-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sponsor-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 24px;
+}
+
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.sponsor-img img {
+    width: 166px;
+    height: 50px;
+}
+
+
+/* -----sponsor styles end */
+
+
 /*-----------------------------------------media query styles--------------------------------- */
 
 
@@ -408,6 +445,14 @@ nav ul {
         gap: 100px;
         padding-top: 100px;
     }
+    /* sponsor----------------------------------------------------------------------------------------- */
+    .sponsor-container {
+        gap: 80px;
+    }
+    .sponsor-description {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
@@ -464,5 +509,9 @@ nav ul {
         width: 542px;
         position: relative;
         left: 30px;
+    }
+    /* sponsor----------------------------------------------------------------------------------------- */
+    .sponsor-container {
+        gap: 100px;
     }
 }
