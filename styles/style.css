@@ -254,6 +254,79 @@ nav ul {
 /* -----feature styles end */
 
 
+/* -----facts styles start */
+
+.facts-header {
+    padding-top: 130px;
+    width: 542px;
+    position: relative;
+    left: 250px;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 125px;
+    padding-top: 100px;
+}
+
+.facts-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 24px;
+}
+
+.facts-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.facts-subject {
+    padding: 45px 35px;
+    text-align: center;
+    border: none;
+    outline: 1px solid #FF900E;
+    border-radius: 8px;
+    transition: .7s;
+}
+
+.facts-subject img {
+    width: 45px;
+    height: 45px;
+}
+
+.facts-subject .number {
+    color: #424242;
+    font-weight: 600;
+    font-size: 45px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.facts-subject .subject-name {
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/* animate */
+
+.facts-subject:hover {
+    transform: rotate(45deg) scale(1.2);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 144, 14, .3);
+}
+
+
+/* -----facts styles end */
+
+
 /*-----------------------------------------media query styles--------------------------------- */
 
 
@@ -322,6 +395,19 @@ nav ul {
         left: 0;
         margin: 20px 0;
     }
+    /* facts----------------------------------------------------------------------------------------- */
+    .facts-header {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        left: 0;
+    }
+    .facts-container {
+        gap: 100px;
+        padding-top: 100px;
+    }
 }
 
 
@@ -371,5 +457,12 @@ nav ul {
         position: relative;
         left: 0;
         margin: 20px 0;
+    }
+    /* facts--------------------------------------------------------------------------------------------- */
+    .facts-header {
+        padding-top: 130px;
+        width: 542px;
+        position: relative;
+        left: 30px;
     }
 }
