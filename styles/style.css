@@ -364,6 +364,31 @@ nav ul {
 /* -----sponsor styles end */
 
 
+/* -----footer styles start */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.footer-description {
+    color: #424242;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 38px 410px;
+}
+
+
+/* -----footer styles end */
+
+
 /*-----------------------------------------media query styles--------------------------------- */
 
 
@@ -453,6 +478,10 @@ nav ul {
         padding-left: 10px;
         padding-right: 10px;
     }
+    /* footer--------------------------------------------------------------------------------------------- */
+    .footer-description {
+        padding: 16px;
+    }
 }
 
 
@@ -513,5 +542,9 @@ nav ul {
     /* sponsor----------------------------------------------------------------------------------------- */
     .sponsor-container {
         gap: 100px;
+    }
+    /* footer--------------------------------------------------------------------------------------------- */
+    .footer-description {
+        padding: 50px;
     }
 }
